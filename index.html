@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="grid">
+<table>
+<tr>
+<td><main id="notationOne"><p></p></main></td>
+<td><main id="notationTwo"><p></p></main></td>
+<td><main id="notationThree"><p></p></main></td>
+<td><main id="notationFour"><p></p></main></td>
+<td><main id="notationFive"><p></p></main></td>
+<td><main id="notationSix"><p></p></main></td>
+<td><main id="notationSeven"><p></p></main></td>
+<td><main id="notationEight"><p></p></main></td>
+<td><button onclick="setBoard()" style="background: black; color: red" id="nodeButton">Turn</button></td>
+</tr>
+<tr>
+<td>
+<section onclick="func1()" style="background: darkslategrey" id="backgroundOne"><section onclick="pawn1center()"><section onclick="pawn1right()">
+<p id="one">White Knight</p>
+</section></section></section>
+</td><td>
+<section onclick="func2()" style="background: darkslateblue" id="backgroundTwo"><section onclick="pawn2left()"><section onclick="pawn2center()"><section onclick="pawn2right()">
+<p id="two"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func3()" style="background: darkslategrey" id="backgroundThree"><section onclick="pawn3center()"><section onclick="pawn3left()"><section onclick="pawn3right()">
+<p id="three"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func4()" style="background: darkslateblue" id="backgroundFour"><section onclick="pawn4center()"><section onclick="pawn4left()"><section onclick="pawn3right()">
+<p id="four"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func5()" style="background: darkslategrey" id="backgroundFive"><section onclick="pawn5center()"><section onclick="pawn5left()"><section onclick="pawn5right()">
+<p id="five"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func6()" style="background: darkslateblue" id="backgroundSix"><section onclick="pawn6center()"><section onclick="pawn6left()"><section onclick="pawn6right()">
+<p id="six"></p>
+</section></section></sectioon></section>
+</td><td>
+<section onclick="func7()" style="background: darkslategrey" id="backgroundSeven"><section onclick="pawn7center()"><section onclick="pawn7left()"><section onclick="pawn7right()">
+<p id="seven"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func8()" style="background: darkslateblue" id="backgroundEight"><section onclick="pawn8center()"><section onclick="pawn8left()">
+<p id="eight">White Rook</p>
+</section></section></section>
+</td>
+<td><main id="notationNine"><p></p></main></td>
+</tr><tr>
+<td>
+<section onclick="func9()" style="background: darkslateblue" id="backgroundNine"><section onclick="pawn9center()"><section onclick="pawn9right()">
+<p id="nine">White Pawn</p>
+</section></section></section>
+</td><td>
+<section onclick="func10()" style="background: darkslategrey" id="backgroundTen"><section onclick="pawn10center()"><section onclick="pawn10left()"><section onclick="pawn10right()">
+<p id="ten">White Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func11()" style="background: darkslateblue" id="backgroundEleven"><section onclick="pawn11center()"><section onclick="pawn11left()"><section onclick="pawn11right()">
+<p id="eleven">White Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func12()" style="background: darkslategrey" id="backgroundTwelve"><section onclick="pawn12center()"><section onclick="pawn12left()"><section onclick="pawn12right()">
+<p id="twelve">White Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func13()" style="background: darkslateblue" id="backgroundThirteen"><section onclick="pawn13center()"><section onclick="pawn13left()"><section onclick="pawn13right()">
+<p id="thirteen">White Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func14()" style="background: darkslategrey" id="backgroundFourteen"><section onclick="pawn14center()"><section onclick="pawn14left()"><section onclick="pawn14right()">
+<p id="fourteen">White Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func15()" style="background: darkslateblue" id="backgroundFifteen"><section onclick="pawn15center()"><section onclick="pawn15left()"><section onclick="pawn15right()">
+<p id="fifteen">White Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func16()" style="background: darkslategrey" id="backgroundSixteen"><section onclick="pawn16center()"><section onclick="pawn16left()">
+<p id="sixteen">White Pawn</p>
+</section></section></section>
+</td>
+<td><main id="notationTen"><p></p></main></td>
+</tr><tr>
+<td>
+<section onclick="func17()" style="background: darkslategrey" id="backgroundSeventeen"><section onclick="pawn17center()"><section onclick="pawn17right()"> <section onclick="whitepawn17right()">
+<p id="seventeen"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func18()" style="background: darkslateblue" id="backgroundEighteen"><section onclick="pawn18center()"><section onclick="pawn18left()"><section onclick="pawn18right()">
+<p id="eighteen"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func19()" style="background: darkslategrey" id="backgroundNineteen"><section onclick="pawn19center()"><section onclick="pawn19left()"><section onclick="pawn19right()"><section onclick="whitepawn19left()"><section onclick="whitepawn19right()">
+<p id="nineteen"></p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func20()" style="background: darkslateblue" id="backgroundTwenty"><section onclick="pawn20center()"><section onclick="pawn20left()"><section onclick="pawn20right()"><section onclick="whitepawn20left()"><section onclick="whitepawn20right()">
+<p id="twenty"></p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func21()" style="background: darkslategrey" id="backgroundTwentyone"><section onclick="pawn21center()"><section onclick="pawn21left()"><section onclick="pawn21right()"><section onclick="whitepawn21left()"><section onclick="whitepawn21right()">
+<p id="twentyone"></p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func22()" style="background: darkslateblue" id="backgroundTwentytwo"><section onclick="pawn22center()"><section onclick="pawn22left()"><section onclick="pawn22right()"><section onclick="whitepawn22left()"><section onclick="whitepawn22right()">
+<p id="twentytwo"></p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func23()" style="background: darkslategrey" id="backgroundTwentythree"><section onclick="pawn23center()"><section onclick="pawn23left()"><section onclick="pawn23right()"><section onclick="whitepawn23left()"><section onclick="whitepawn23right()">
+<p id="twentythree"></p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func24()" style="background: darkslateblue" id="backgroundTwentyfour"><section onclick="pawn24center()"><section onclick="pawn24left()"><section onclick="whitepawn24left()">
+<p id="twentyfour"></p>
+</section></section></section></section>
+</td>
+<td><main id="notationEleven"><p></p></main></td>
+</tr><tr>
+<td>
+<section onclick="func25()" style="background: darkslateblue" id="backgroundTwentyfive"><section onclick="pawn25center()"><section onclick="pawn25right()"><section onclick="whitepawn25right()"><section onclick="pawn25center2()">
+<p id="twentyfive"></p>
+</section></section></section></section></section>
+</td><td>
+<section onclick="func26()" style="background: darkslategrey" id="backgroundTwentysix"><section onclick="pawn26center()"><section onclick="pawn26left()"><section onclick="pawn26right()"><section onclick="whitepawn26left()"><section onclick="whitepawn26right()"><section onclick="pawn26center2()">
+<p id="twentysix"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func27()" style="background: darkslateblue" id="backgroundTwentyseven"><section onclick="pawn27center()"><section onclick="pawn27left()"><section onclick="pawn27right()"><section onclick="whitepawn27left()"><section onclick="whitepawn27right()"><section onclick="pawn27center2()">
+<p id="twentyseven"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func28()" style="background: darkslategrey" id="backgroundTwentyeight"><section onclick="pawn28center()"><section onclick="pawn28left()"><section onclick="pawn28right()"><section onclick="whitepawn28left()"><section onclick="whitepawn28right()"><section onclick="pawn28center2()">
+<p id="twentyeight"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func29()" style="background: darkslateblue" id="backgroundTwentynine"><section onclick="pawn29center()"><section onclick="pawn29left()"><section onclick="pawn29right()"><section onclick="whitepawn29left()"><section onclick="whitepawn29right()"><section onclick="pawn29center2()">
+<p id="twentynine"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func30()" style="background: darkslategrey" id="backgroundThirty"><section onclick="pawn30center()"><section onclick="pawn30left()"><section onclick="pawn30right()"><section onclick="whitepawn30left()"><section onclick="whitepawn30right()"><section onclick="pawn30center2()">
+<p id="thirty"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func31()" style="background: darkslateblue" id="backgroundThirtyone"><section onclick="pawn31center()"><section onclick="pawn431eft()"><section onclick="pawn31right()"><section onclick="whitepawn431eft()"><section onclick="whitepawn31right()"><section onclick="pawn31center2()">
+<p id="thirtyone"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func32()" style="background: darkslategrey" id="backgroundThirtytwo"><section onclick="pawn32center()"><section onclick="pawn32left()"><section onclick="whitepawn32left()"><section onclick="pawn32center2()">
+<p id="thirtytwo"></p>
+</section></section></section></section></section>
+</td>
+<td><main id="notationTwelve"><p></p></main></td>
+</tr><tr>
+<td>
+<section onclick="func33()" style="background: darkslategrey" id="backgroundThirtythree"><section onclick="pawn33center()"><section onclick="pawn33right()"><section onclick="whitepawn33right()"><section onclick="pawn33center2()">
+<p id="thirtythree"></p>
+</section></section></section></section></section>
+</td><td>
+<section onclick="func34()" style="background: darkslateblue" id="backgroundThirtyfour"><section onclick="pawn34center()"><section onclick="pawn34left()"><section onclick="pawn34right()"><section onclick="whitepawn34left()"><section onclick="whitepawn34right()"><section onclick="pawn34center2()">
+<p id="thirtyfour"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func35()" style="background: darkslategrey" id="backgroundThirtyfive"><section onclick="pawn35center()"><section onclick="pawn35left()"><section onclick="pawn35right()"><section onclick="whitepawn35left()"><section onclick="whitepawn35right()"><section onclick="pawn35center2()">
+<p id="thirtyfive"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func36()" style="background: darkslateblue" id="backgroundThirtysix"><section onclick="pawn36center()"><section onclick="pawn36right()"><section onclick="pawn36left()"><section onclick="whitepawn36right()"><section onclick="whitepawn36left()"><section onclick="pawn36center2()">
+<p id="thirtysix"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func37()" style="background: darkslategrey" id="backgroundThirtyseven"><section onclick="pawn37center()"><section onclick="pawn37right()"><section onclick="pawn37left()"><section onclick="whitepawn37right()"><section onclick="whitepawn37left()"><section onclick="pawn37center2()">
+<p id="thirtyseven"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func38()" style="background: darkslateblue" id="backgroundThirtyeight"><section onclick="pawn38left()"><section onclick="pawn39right()"><section onclick="whitepawn38left()"><section onclick="whitepawn39right()"><section onclick="pawn38center()"><section onclick="pawn38center2()">
+<p id="thirtyeight"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func39()" style="background: darkslategrey" id="backgroundThirtynine"><section onclick="pawn39center()"><section onclick="pawn39left()"><section onclick="pawn39right()"><section onclick="whitepawn39left()"><section onclick="whitepawn39right()"><section onclick="pawn39center2()">
+<p id="thirtynine"></p>
+</section></section></section></section></section></section></section>
+</td><td>
+<section onclick="func40()" style="background: darkslateblue" id="backgroundFourty"><section onclick="pawn40center()"><section onclick="pawn40left()"><section onclick="whitepawn40left()"><section onclick="pawn40center2()">
+<p id="fourty"></p>
+</section></section></section></section></section>
+</td>
+<td><main id="notationThirteen"><p></p></main></td>
+</tr><tr>
+<td>
+<section onclick="func41()" style="background: darkslateblue" id="backgroundFourtyone"><section onclick="pawn41center()"><section onclick="pawn41right()"><section onclick="whitepawn41right()">
+<p id="fourtyone"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func42()" style="background: darkslategrey" id="backgroundFourtytwo"><section onclick="pawn42left()"><section onclick="pawn42center()"><section onclick="pawn42right()"><section onclick="whitepawn42center()"><section onclick="whitepawn42right()">
+<p id="fourtytwo"></p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func43()" style="background: darkslateblue" id="backgroundFourtythree"><section onclick="pawn43center()"><section onclick="pawn43left()"><section onclick="pawn43right()"><section onclick="whitepawn43left()"><section onclick="whitepawn43right()">
+<p id="fourtythree">Black Knight</p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func44()" style="background: darkslategrey" id="backgroundFourtyfour"><section onclick="pawn44center()"><section onclick="pawn45left()"><section onclick="pawn45right()"><section onclick="whitepawn45left()"><section onclick="whitepawn45right()">
+<p id="fourtyfour">White Knight</p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func45()" style="background: darkslateblue" id="backgroundFourtyfive"><section onclick="pawn25center()"><section onclick="pawn46left()"><section onclick="pawn46right()"><section onclick="whitepawn46left()"><section onclick="whitepawn46right()">
+<p id="fourtyfive"></p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func46()" style="background: darkslategrey" id="backgroundFourtysix"><section onclick="pawn46left()"><section onclick="pawn46center()"><section onclick="pawn46right()"><section onclick="whitepawn46right()"><section onclick="whitepawn46left()">
+<p id="fourtysix"></p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func47()" style="background: darkslateblue" id="backgroundFourtyseven"><section onclick="pawn47left()"><section onclick="pawn47center()"><section onclick="pawn47right()"><section onclick="whitepawn47right()"><section onclick="whitepawn47left()">
+<p id="fourtyseven"></p>
+</section></section></section></section></section></section>
+</td><td>
+<section onclick="func48()" style="background: darkslategrey" id="backgroundFourtyeight"><section onclick="pawn48left()"><section onclick="pawn48center()"><section onclick="whitepawn48left()">
+<p id="fourtyeight"></p>
+</section></section></section></section>
+</td>
+<td><main id="notationFourteen"><p></p></main></td>
+</tr><tr>
+<td>
+<section onclick="func49()" style="background: darkslategrey" id="backgroundFourtynine"><section onlcick="pawn49center()"><section onclick="whitepawn49right()">
+<p id="fourtynine">Black Pawn</p>
+</section></section></section>
+</td><td>
+<section onclick="func50()" style="background: darkslateblue" id="backgroundFifty"><section onlcick="pawn50center()"><section onclick="whitepawn50right()"><section onclick="whitepawn50left()">
+<p id="fifty">Black Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func51()" style="background: darkslategrey" id="backgroundFiftyone"><section onlcick="pawn51center()"><section onclick="whitepawn51right()"><section onclick="whitepawn51left()">
+<p id="fiftyone">Black Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func52()" style="background: darkslateblue" id="backgroundFiftytwo"><section onlcick="pawn52center()"><section onclick="whitepawn52right()"><section onclick="whitepawn52left()">
+<p id="fiftytwo">Black Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func53()" style="background: darkslategrey" id="backgroundFiftythree"><section onlcick="pawn53center()"><section onclick="whitepawn53right()"><section onclick="whitepawn53left()">
+<p id="fiftythree">Black Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func54()" style="background: darkslateblue" id="backgroundFiftyfour"><section onlcick="pawn54center()"><section onclick="whitepawn54right()"><section onclick="whitepawn54left()">
+<p id="fiftyfour">Black Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func55()" style="background: darkslategrey" id="backgroundFiftyfive"><section onlcick="pawn55center()"><section onclick="whitepawn55right()"><section onclick="whitepawn55left()">
+<p id="fiftyfive">Black Pawn</p>
+</section></section></section></section>
+</td><td>
+<section onclick="func56()" style="background: darkslateblue" id="backgroundFiftysix"><section onlcick="pawn56center()"><section onclick="whitepawn56left()">
+<p id="fiftysix">Black Pawn</p>
+</section></section></section>
+</td>
+<td><main id="notationFifteen"><p></p></main></td>
+</tr><tr>
+<td>
+<section onclick="func57()" style="background: darkslateblue" id="backgroundFiftyseven"><section onclick="pawn57center()"><section onclick="whitepawn57right()">
+<p id="fiftyseven">Black Rook</p>
+</section></section></section>
+</td><td>
+<section onclick="func58()" style="background: darkslategrey" id="backgroundFiftyeight"><section onclick="pawn58center()"><section onclick="whitepawn58right()"><section onclick="whitepawn58left()">
+<p id="fiftyeight"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func59()" style="background: darkslateblue" id="backgroundFiftynine"><section onclick="pawn59center()"><section onclick="whitepawn59right()"><section onclick="whitepawn59left()">
+<p id="fiftynine"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func60()" style="background: darkslategrey" id="backgroundSixty"><section onclick="pawn60center()"><section onclick="whitepawn60right()"><section onclick="whitepawn60left()">
+<p id="sixty"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func61()" style="background: darkslateblue" id="backgroundSixtyone"><section onclick="pawn61center()"><section onclick="whitepawn61right()"><section onclick="whitepawn61left()">
+<p id="sixtyone"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func62()" style="background: darkslategrey" id="backgroundSixtytwo"><section onclick="pawn62center()"><section onclick="whitepawn62right()"><section onclick="whitepawn62left()">
+<p id="sixtytwo"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func63()" style="background: darkslateblue" id="backgroundSixtythree"><section onclick="pawn63center()"><section onclick="whitepawn63right()"><section onclick="whitepawn63left()">
+<p id="sixtythree"></p>
+</section></section></section></section>
+</td><td>
+<section onclick="func64()" style="background: darkslategrey" id="backgroundSixtyfour"><section onclick="whitepawn64left()"><section onclick="pawn64center()">
+<p id="sixtyfour">Black Rook</p>
+</section></section></section>
+</td>
+<td><main id="notationSixteen"><p></p></main></td>
+</tr>
+<tr>
+<td><footer style="background: red"></footer></td>
+<td><footer id="boardStop" style="background: red"></footer></td>
+<td><footer onclick="graveyardRook()" id="graveRook"><p>Rook</p></footer></td>
+<td><footer onclick="graveyardBishop()" id="graveBishop"><p>Bishop</p></footer></td>
+<td><footer onclick="graveyardKnight()" id="graveKnight"><p>Knight</p></footer></td>
+<td><footer onclick="graveyardQueen()" id="graveQueen"><p>Queen</p></footer></td>
+<td><footer style="background: red"></footer></td>
+<td><footer style="background: red"></footer></td>
+<td><footer style="background: red"></footer></td>
+</tr>
+</table>
+</div>
+
+<script src="rookPawnMaster.js"></script>
+<script src="whiteKnight.js"></script>
+</body>
+</html>

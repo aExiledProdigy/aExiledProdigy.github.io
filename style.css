@@ -1,0 +1,8 @@
+body {background: black;}
+table {border-collapse: collapse; border: solid 2px red;}
+td {height: 35px; width: 35px;}
+section {height: 100%; width: 100%;}
+main {height: 100%; width: 100%; background: forestgreen; border: solid 2px red;}
+footer {height: 100%; width: 100%; background: skyblue;}
+p {font-size: 14px; margin:0 0 0 0; text-align: center;}
+.grid {display: flex; justify-content: center;}
